@@ -23,7 +23,7 @@ public class BookImplementation {
     }
 
     public void update(Book book) {
-        long id = book.i;
+        long id = book.id;
         Book existingBook = Book.findById(Book.class, id);
         existingBook.title = book.title;
         existingBook.author = book.author;
